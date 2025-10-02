@@ -2,7 +2,10 @@ package arrayList;
 
 import java.util.Scanner;
 
-public class contraseña {
+/*
+ * @author Juan José Ortiz Jiménez
+ */
+public class Array1 {
 
 	public static void main(String[] args) {
 		String palabra;
