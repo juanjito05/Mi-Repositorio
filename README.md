@@ -1,4 +1,6 @@
-# MiPrimerProyecto
+# Mi Repositorio
 
 
-Este es mi primera vez teniendo un git propio. Espero que aprendáis de esto.
+
+Aquí mostraré todo lo que trabaje en clase y mi avance sobre este curso
+
