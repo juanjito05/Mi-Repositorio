@@ -1,0 +1,47 @@
+strong {
+  color: red;
+}
+
+.destacado {
+  color: rgb(255, 206, 45);
+}
+
+.especial {
+  color: blueviolet;
+}
+
+#especial {
+  color: rgb(205, 152, 255);
+}
+
+h1 {
+  color: rgb(92, 161, 159);
+}
+
+h2,
+em {
+  color: blue;
+}
+
+th {
+  color: rgb(255, 206, 45);
+}
+
+td {
+  color: rgb(1, 189, 1);
+}
+
+caption {
+  color: rgb(111, 0, 255);
+}
+
+a:first-of-type {
+  color: rgb(255, 89, 0);
+}
+
+a:nth-of-type(2) {
+  color: green;
+}
+tr th {
+    color: red;
+}

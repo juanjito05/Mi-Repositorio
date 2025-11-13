@@ -2,6 +2,11 @@ package metodo;
 
 import java.util.Scanner;
 
+/*
+ * @author Juanjo
+ * 29/10/2025
+ */
+
 public class Estudiantes {
 
 	public static void main(String[] args) {

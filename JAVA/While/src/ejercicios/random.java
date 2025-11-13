@@ -27,32 +27,39 @@ public class random {
 		System.out.println("hasta el: ");
 		fin = sc.nextInt();
 
-		System.out.println("Selecciona el número de oportunidades que desee: ");
-		oportunidades = sc.nextInt();
+		if (inicio > fin) {
+			System.out.println(
+					"El número inicial es más grande que el final, el numero random se comprenden de menor a mayor");
+		} else {
+			System.out.println("Selecciona el número de oportunidades que desee: ");
+			oportunidades = sc.nextInt();
 
-		n = 0;
-		random = (int) Math.floor(Math.random() * (inicio - fin + 1) + fin);
+			n = 0;
+			random = (int) Math.floor(Math.random() * (inicio - fin + 1) + fin);
 
-//		System.out.println(random);
+			System.out.println(random);
 
-		for (int i = 0; i < oportunidades; i++) {
-			System.out.println("Introduce numero:");
-			n = sc.nextInt();
-			if (n == random) {
-				System.out.println("Correcto");
-				break;
-			} else {
-				numeroFallos++;
-				System.out.println("Incorrecto llevas "+ numeroFallos+" fallos");
-				if (numeroFallos == 3) {
-					random= (int) Math.floor(Math.random() * (inicio - fin + 1) + fin);
-//					System.out.println(random);
-					if(numeroFallos==oportunidades) {
-						System.out.println("GAME OVER");
-						break;
+			for (int i = 0; i < oportunidades; i++) {
+				System.out.println("Introduce numero:");
+				n = sc.nextInt();
+				if (n == random) {
+					System.out.println("Correcto");
+					break;
+				} else {
+					numeroFallos++;
+					System.out.println("Incorrecto llevas " + numeroFallos + " fallos");
+					if (numeroFallos == 3) {
+						//numeroFallos=0;
+						random = (int) Math.floor(Math.random() * (inicio - fin + 1) + fin);
+						System.out.println(random);
+						if (numeroFallos == oportunidades) {
+							System.out.println("GAME OVER");
+							break;
+						}
+
 					}
-					
 				}
+
 			}
 
 		}

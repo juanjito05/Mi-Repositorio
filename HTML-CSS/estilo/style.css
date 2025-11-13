@@ -1,0 +1,25 @@
+body{
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+background-color: rgb(228, 230, 252);
+}
+p:nth-child(2){
+width:60%;
+border:#00F
+dotted
+}
+p:nth-child(1){
+font-style: italic;
+color: grey;
+}
+p:nth-child(3){
+font-style: italic;
+color: grey;
+}
+p:nth-child(4){
+width:300px ;
+margin:auto;
+border:#009900
+double;
+background-color:#FFC;
+padding:5%
+}

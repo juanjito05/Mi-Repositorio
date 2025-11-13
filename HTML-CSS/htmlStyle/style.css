@@ -1,0 +1,72 @@
+body{
+    font-family: "Michroma", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: rgb(22, 55, 79);
+    color:  rgb(69, 177, 254);
+    text-shadow: 2px 2px 2px black;
+    padding: 1%;
+}
+.barra{
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* coloca .titulo a la izquierda y .opciones a la derecha */
+  gap: 1rem;
+  background-color: rgb(43, 113, 163);
+  padding: 10px;
+}
+
+.titulo{
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 0;
+  background-color: rgb(43, 113, 163);
+}
+/* evitar que el <h3> dentro de .titulo añada saltos por sus márgenes */
+.titulo h3 {
+  margin: 0;
+}
+.opciones{
+  text-align: right;
+  background-color: rgb(43, 113, 163);
+  /* no es necesario repetir el background aquí */
+}
+.grid{
+    display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     grid-auto-rows: minmax(100px, auto);
+     padding: 1%;
+}
+
+.bokor-regular {
+  font-family: "Bokor", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+div{
+background-color: rgb(18, 47, 67);
+border-radius: 10px;
+}
+
+.header{
+    font-weight: bold;
+    text-align: center;
+}
+
+.body{
+grid-column: 2/4;
+grid-row: 1/ 1;
+text-align: left;
+margin: 30px;
+}
+
+.img{
+   grid-column: 1;
+  grid-row: 1;
+   background-color: rgb(27, 41, 50);
+   height: 70%;
+   img{
+    height: 100%;
+   }
+}

@@ -1,0 +1,27 @@
+div{
+    border-radius: 5px;
+    padding: 20px;
+}
+body{
+    background-color: rgb(231, 181, 72);
+}
+
+
+.card{
+background-color: white;
+width: 25%;
+border: 10px;
+}
+
+
+.parrafo1{
+    position: absolute;
+    right: 10%;
+    bottom: 20%;
+    background-color: blue;
+
+}
+
+.parrafo3{
+    background-color: rgb(214, 51, 163);
+}

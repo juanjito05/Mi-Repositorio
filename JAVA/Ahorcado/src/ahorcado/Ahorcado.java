@@ -1,6 +1,10 @@
 package ahorcado;
 
 import java.util.Random;
+
+/*
+ * @author Juan josé Ortiz Jiménez
+ */
 import java.util.Scanner;
 
 public class Ahorcado {
@@ -20,22 +24,15 @@ public class Ahorcado {
 		int fallos = 0;
 
 		for (int i = 0; i < palabras.length; i++) {
+			
 			int p = random.nextInt(palabras.length);
-			palabraAleatoria = palabras[p];
-//			System.out.println(palabraAleatoria);
-//			for (int j = 0; j < palabraAleatoria.length(); j++) {
-////				palabraIntro.charAT() = palabraAleatoria.charAt(j);
-//				System.out.print(espacio+ " ");
-//		
-//			}
-//			
+			palabraAleatoria = palabras[p];			
 			palabraIntro = new char[palabraAleatoria.length()];
 
 			for (int j = 0; j < palabraAleatoria.length(); j++) {
 				palabraIntro[j] = espacio;
 			}
-//			
-//			Bucle
+
 			while (!String.valueOf(palabraIntro).equals(palabraAleatoria) && fallos < 3) {
 				System.out.println(palabraIntro);
 				System.out.println("\u001b[1;34m¡Introduce letra aleatoria!\u001b[0m");
@@ -48,7 +45,7 @@ public class Ahorcado {
 					}
 
 				}
-//				System.out.println(letraIntro);
+
 //				Si contador sigue siendo cero se acumulan los fallos
 				if (contador == 0) {
 					fallos++;

@@ -1,0 +1,15 @@
+#primero{
+    color: rgb(0, 148, 227);
+}
+a{
+    color: red;
+}
+span{
+   font-weight: bold;
+}
+em{
+   background-color: #ffb95e;
+}
+em:nth-child(2){
+    background-color: #fffca9;
+}
