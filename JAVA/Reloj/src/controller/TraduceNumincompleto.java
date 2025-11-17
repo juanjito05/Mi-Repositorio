@@ -12,7 +12,7 @@ import java.util.Scanner;
 import model.Numeros;
 
 /*
- * @author Juan Jose Ortiz
+ * @author Juan Jose Ortiz JiMenez
  */
 public class TraduceNumincompleto {
 
