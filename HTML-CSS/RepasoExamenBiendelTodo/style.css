@@ -1,0 +1,104 @@
+body{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+nav{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    background-color:midnightblue;
+    color: white;
+
+}
+/* los he utilizado para los dos tipos de items hijos en el nav y en el header que se comportan de la misma manera*/
+.item{
+      display: flex;
+    flex-direction: row;
+      gap: 20px;
+}
+
+.item:nth-child(1){
+    margin-right: auto;
+}
+
+.item:nth-child(2){
+    margin-left: auto;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+    gap: 20px;
+    padding: 10px;
+    font-weight: bold;
+    color:rgb(1, 156, 207);
+    border-bottom: 0.5px solid rgb(203, 203, 203);
+}
+
+.header .item:nth-child(2){
+    margin:10px;
+}
+
+.header img{
+width: 125px;
+height: 80px;
+}
+
+h1 {
+margin:30px;
+font-weight: bold;
+}
+
+.body{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    width: auto;
+}
+
+
+.body .item{
+     flex-direction: row;
+       height: 100%;
+}
+
+.body .item:nth-child(1){
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-left: 70px;
+    color:rgb(1, 156, 207);
+    width: auto;
+}
+
+.body .item:nth-child(2){
+    margin-right:auto;
+    width: auto;
+    flex-wrap: nowrap;
+    width: 55%;
+}
+
+
+.card {
+     flex-basis: 25.33%;
+}
+.card img{
+    width: 100%;
+    height: 200px;
+    width: 370px;
+}
+ul{
+    margin-top: none;
+width: 100%;
+list-style:none;
+}
+li{
+    border-bottom: 0.5px solid rgb(203, 203, 203);
+
+}
