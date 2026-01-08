@@ -36,7 +36,6 @@ public class Vista extends JFrame {
 	private void crearVentana() {
 		
 		setTitle(model.getDatos().get(0));
-		setSize(400, 400);
 		setLocation(400, 250);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 
@@ -54,12 +53,11 @@ public class Vista extends JFrame {
 
 		JPanel panelCaja = paneles.get(0);
 
-		JTextField caja = new JTextField(15);
+		JTextField caja = new JTextField(30);
 		cajas.add(caja);
-		add(caja);
 		panelCaja.add(caja);
 		
-//		this.pack();
+		this.pack();
 
 	}
 

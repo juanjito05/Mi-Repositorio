@@ -11,7 +11,8 @@ public class Modelo {
 		
 		datos= new ArrayList<>();
 		
-		datos.add("Títutlo");
+		datos.add("Título");
+		datos.add("Introduzca contraseña");
 	}
 
 
