@@ -6,6 +6,7 @@ package controller;
 //y guarda los  solo tres numeros  los ultimos tres que se hayan metido
 
 import java.io.*;
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -23,11 +24,23 @@ public class TraduceNumincompleto {
 		ArrayList<Integer> numList = new ArrayList<>();
 
 		rellenarNumeros(numList, sc);
-		pasarAstring(numeros, numList);
+
+		numList = pasarAstring(numeros, numList);
+
+		imprimirTresUltimosNum(numList);
 
 	}
 
-	private static void pasarAstring(Numeros numeros, ArrayList<Integer> numList) {
+	private static void imprimirTresUltimosNum(ArrayList<Integer> numList) {
+
+		System.out.println("Últimos números introducidos");
+		for (int i = numList.size() - 3; i < numList.size(); i++) {
+			System.out.println(numList.get(i));
+		}
+
+	}
+
+	private static ArrayList<Integer> pasarAstring(Numeros numeros, ArrayList<Integer> numList) {
 		for (int n : numList) {
 			int centenas = n / 100;
 			int decenas = (n / 10) % 10;
@@ -38,9 +51,9 @@ public class TraduceNumincompleto {
 			} else {
 				System.out.println(numeros.getCentenas().get(centenas) + " " + numeros.getDecenas().get(decenas) + " "
 						+ numeros.getUnidades().get(unidades));
-
 			}
 		}
+		return numList;
 
 	}
 
@@ -48,8 +61,12 @@ public class TraduceNumincompleto {
 		System.out.println("Introduce 10 numeros: ");
 		for (int i = 0; i < 10; i++) {
 			System.out.println("Introduce numero: ");
-			int n = sc.nextInt();
+			int n = introducirNum(sc);
 			numList.add(n);
 		}
+	}
+
+	private static int introducirNum(Scanner sc) {
+		return sc.nextInt();
 	}
 }
