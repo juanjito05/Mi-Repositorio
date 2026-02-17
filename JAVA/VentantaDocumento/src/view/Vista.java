@@ -17,7 +17,18 @@ public class Vista extends JFrame{
 		botones = new ArrayList<>();
 
 		crearVentana();
-		
+		paneles = crearPaneles(paneles, 8);
+	}
+	
+	private ArrayList<JPanel> crearPaneles(ArrayList<JPanel> paneles, int n) {
+
+		for (int i = 0; i < n; i++) {
+			JPanel panel = new JPanel(new GridLayout(6, 4));
+			paneles.add(panel);
+			this.add(panel);
+		}
+		return paneles;
+
 	}
 
 	private void crearVentana() {
